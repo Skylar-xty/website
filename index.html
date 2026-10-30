@@ -22,19 +22,18 @@
                 <p class="name" style="text-align: center;">
                   Tianyi Xia
                 </p>
-                <p>I'm a research scientist at <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco, where I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.
+                <p>I'm a master's student in Robotics at the <a href="https://www.grasp.upenn.edu/">GRASP Lab</a>, <a href="https://www.upenn.edu/">University of Pennsylvania</a>, advised by <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a> and <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>. I work on safe and stable robot learning: learning motion policies from demonstrations and giving them provable stability and safety guarantees with tools from control theory, such as Lyapunov functions, control barrier functions, and reachability analysis.
                 </p>
                 <p>
-                  At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+                  I received my B.S. in Information and Computing Science and B.Eng. in Cyberspace Security from <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a>, and was a visiting student at <a href="https://www.berkeley.edu/">UC Berkeley</a> and <a href="https://ucsd.edu/">UC San Diego</a>. I have also worked on human&ndash;robot interaction at the <a href="https://pi.cs.tsinghua.edu.cn/">Pervasive HCI Group</a>, Tsinghua University.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:tianyxia@seas.upenn.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
                   <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
                   <a href="https://www.linkedin.com/in/tianyixia0618/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=sYL_b2YAAAAJ">Scholar</a> &nbsp;/&nbsp;
                   <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
-                  <a href="https://github.com/jonbarron/">Github</a>
+                  <a href="https://github.com/Skylar-xty">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -47,7 +46,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  My research focuses on developing safe, learning-based control for harmonious human&ndash;robot interaction.
                 </p>
               </td>
             </tr>
@@ -55,56 +54,74 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
-					</div>
-          <img src='images/ever_before.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
-          }
-
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
-          }
-          ever_stop()
-        </script>
+        <img src="images/reach_avoid.png" alt="Reach-Avoid Certificates for Contact-based Stochastic Hybrid Systems" width="160">
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ever.github.io/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
-</span>
+        <a href="https://arxiv.org/abs/2610.17308">
+          <span class="papertitle">Reach-Avoid Certificates for Contact-based Stochastic Hybrid Systems</span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
-				<br>
-        <em>arXiv</em>, 2024
+        <strong>Tianyi Xia</strong>, Ryan K. Cosner
         <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <em>American Control Conference (ACC)</em>, 2027 (under review)
+        <br>
+        <a href="https://arxiv.org/abs/2610.17308">paper</a>
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+          Introduced reach-avoid contact certificates that guarantee, over an infinite horizon and with a prescribed probability, that a stochastic hybrid system controlled only through its resets reaches the target before the unsafe set. Certificates are found by linear programming and turned into a pointwise safety filter for arbitrary nominal controllers.
         </p>
       </td>
     </tr>
     
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/zipnerf.jpg" alt="New publication" width="160">
+        <img src="images/zipnerf.jpg" alt="A Reachability-based Safety Certificate for Dynamical System Motion Policies" width="160">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="TODO">
+          <span class="papertitle">A Reachability-based Safety Certificate for Dynamical System Motion Policies</span>
+        </a>
+        <br>
+        Aditya Vats*, <strong>Tianyi Xia*</strong>, Nadia Figueroa
+        <br>
+        <em>IEEE Transactions on Robot Learning (T-RL)</em>, 2026 (under review)
+        <br>
+        <strong>Spotlight</strong>, <em>IROS 2026 Workshop on Hybrid Architectures for Embodied Autonomy</em>
+        <br>
+        <a href="TODO">paper</a>
+        <p></p>
+        <p>
+          Developed a reachability-based safety certificate for DS motion policies that reduces the infinite-horizon problem to a finite-horizon rollout while provably recovering the maximal forward-invariant safe set. Its look-ahead safety filter avoids the spurious attractors and deadlocks of modulation and CBF methods, validated on five DS classes and a Franka manipulator.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/zipnerf.jpg" alt="Execution-Level Correction for Surgical Robot Automation via Residual Policy Learning from Human Corrections" width="160">
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="TODO">
+          <span class="papertitle">Execution-Level Correction for Surgical Robot Automation via Residual Policy Learning from Human Corrections</span>
+        </a>
+        <br>
+        Kejian Shi, Qingbiao Li, Chunhei Lau, <strong>Tianyi Xia</strong>, Lei Song, Yonghao Long, Sethu Vijayakumar, Qi Dou
+        <br>
+        <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026 (to appear)
+        <br>
+        <a href="TODO">paper</a>
+        <p></p>
+        <p>
+          [One- or two-sentence description]
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/balloonbot.png" alt="Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study" width="160">
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="TODO">
@@ -118,7 +135,7 @@
 			<a href="https://doi.org/10.1145/3746059.3747666">paper</a>
 			<p></p>
 			<p>
-				One-sentence description of the work.
+				BalloonBot, a helium-balloon social robot that combines the mobility of drones with the safety and approachability of ground robots, evaluated in an exploratory lab study of users' perceptions and expectations.
 			</p>
       </td>
     </tr>
@@ -129,10 +146,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Projects</h2>
-                <p>
-                  Selected project pages.
-                </p>
+                <h2>Selected Projects</h2>
               </td>
             </tr>
           </tbody></table>
@@ -141,19 +155,27 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/zipnerf.jpg" alt="Dynamic Pick-and-Place Challenge" width="160">
+                <img src="images/neural_ode.png" alt="Stable and Safe Neural ODEs" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="zipnerf/">
+                <a href="meam623/">
                   <span class="papertitle">Stable and Safe Neural ODEs</span>
                 </a>
                 <br>
-                Anti-aliased grid-based NeRF.
+                <em>Final Project, MEAM 6230: Learning and Control for Adaptive and Reactive Robots</em>, [2026 Spring]
                 <br>
-                <a href="meam520/MEAM_5200_Final_Project_Report.pdf">code</a>
+                Advisor: <a href="https://nbfigueroa.github.io/">Prof. Nadia Figueroa</a>, University of Pennsylvania
+                <br>
+                 A Neural ODE motion policy jointly learned with a Lyapunov function, using closed-form CLF/CBF projections to guarantee stability and obstacle avoidance while imitating demonstrations on 2D and 3D environments.
+                <br>
+                <a href="meam623/MEAM6230_Final_Report.pdf">report</a>
+                /
+                <a href="meam623/poster_final.pdf">poster</a>
+                /
+                <a href="https://github.com/Skylar-xty/InvarianceNODE/tree/final_project">code</a>
               </td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <img src="images/zipnerf.jpg" alt="Dynamic Pick-and-Place Challenge" width="160">
               </td>
@@ -166,148 +188,221 @@
                 <br>
                 <a href="meam520/MEAM_5200_Final_Project_Report.pdf">code</a>
               </td>
+            </tr> -->
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/quadrotor_maze.png" alt="Autonomous Quadrotor Flight through Cluttered Mazes" width="160">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="meam620/">
+                  <span class="papertitle">Autonomous Quadrotor Flight through Cluttered Mazes</span>
+                </a>
+                <br>
+                <em>Course Project, MEAM 6200: Advanced Robotics</em>, [2026 Spring]
+                <br>
+                Advisors: <a href="https://www.grasp.upenn.edu/people/ani-hsieh/">Prof. M. Ani Hsieh</a> and <a href="https://www.cis.upenn.edu/~cjtaylor/">Prof. Camillo J. Taylor</a>, University of Pennsylvania
+                <br>
+                A Crazyflie quadrotor that plans with A* search, follows minimum-jerk splines with a geometric SE(3) controller, and autonomously flies three cluttered mazes in a VICON arena with about 0.13 m tracking error.
+                <br>
+                <a href="meam620/A_good_title.pdf">report</a>
+                /
+                <a href="https://youtu.be/FqddOW7YG1Q">video</a>
+              </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/zipnerf.jpg" alt="Dynamic Pick-and-Place Challenge" width="160">
+                <img src="images/pick_and_place.jpg" alt="Dynamic Pick-and-Place Challenge" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="zipnerf/">
+                <a href="meam520/">
                   <span class="papertitle">Dynamic Pick-and-Place Challenge</span>
                 </a>
                 <br>
-                Anti-aliased grid-based NeRF.
+                <em>Final Project, MEAM 5200: Introduction to Robotics</em>, [2025 Fall]
+                <br>
+                Advisor: <a href="https://www.engineering.upenn.edu/~rhollada/">Prof. Rachel Holladay</a>, University of Pennsylvania
+                <br>
+                A vision-based Franka Panda pipeline that stacks static blocks and intercepts moving blocks on a rotating turntable by predicting their arrival time.
                 <br>
                 <a href="meam520/MEAM_5200_Final_Project_Report.pdf">report</a>
+                /
+                <a href="https://drive.google.com/drive/folders/1ZPDFeMnVB9apN4z8fWn7iO611me31tFK">video</a>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/mip360.jpg" alt="mip-NeRF 360" width="160">
+                <img src="images/mobile_manipulator.jpg" alt="Viability-Preserving Passive Torque Control for Mobile Base Manipulator" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="mipnerf360/">
+                <a href="meam517/">
                   <span class="papertitle">Viability-Preserving Passive Torque Control for Mobile Base Manipulator</span>
                 </a>
                 <br>
-                Unbounded 360° radiance fields with anti-aliasing.
+                <em>Final Project, MEAM 5170: Control and Optimization with Applications in Robotics</em>, [2025 Fall]
                 <br>
-                <a href="meam517/group_06_poster_f25.pdf">poster</a>
+                Advisor: <a href="https://dair.engineering.upenn.edu/">Prof. Michael Posa</a>, University of Pennsylvania
+                <br>
+                Viability-preserving passive torque control extended to a 9-DoF mobile manipulator for collision-free tracking, running faster and far smoother than a CBF-QP baseline.
+                <br>
                 <a href="meam517/MEAM5170_Final_Report_Group_6.pdf">report</a>
+                /
+                <a href="meam517/group_06_poster_f25.pdf">poster</a>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/mipnerf_ipe.png" alt="mip-NeRF" width="160">
+                <img src="images/zipnerf.jpg" alt="Planning, Control, and Learning for Robotics" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="mipnerf/">
-                  <span class="papertitle">mip-NeRF</span>
+                <a href="ece276b/">
+                  <span class="papertitle">Planning, Control, and Learning for Robotics</span>
                 </a>
                 <br>
-                Anti-aliased volume rendering for NeRF.
+                <em>Course Project, ECE 276B: Planning &amp; Learning in Robotics</em>, [2025 Spring]
                 <br>
-                <a href="mipnerf/">project page</a>
+                Advisor: <a href="https://natanaso.github.io/">Prof. Nikolay A. Atanasov</a>, University of California, San Diego
+                <br>
+                Dynamic programming, search- and sampling-based motion planning, and receding-horizon control for robot navigation tasks.
+                <br>
+                <a href="TODO">report</a>
+                /
+                <a href="TODO">code</a>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/mipnerf_ipe.png" alt="mip-NeRF" width="160">
+                <img src="images/robomaster_tracking.jpg" alt="Target Tracking and Aiming System in Complex Motion Environment" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="mipnerf/">
+                <a href="undergrad/target-tracking/">
                   <span class="papertitle">Target Tracking and Aiming System in Complex Motion Environment</span>
                 </a>
                 <br>
-                Anti-aliased volume rendering for NeRF.
+                <em>Algorithm Developer, RoboMaster Team</em>, [2022 Fall &ndash; 2023 Summer]
                 <br>
-                <a href="mipnerf/">project page</a>
+                <strong>National Second Prize</strong> and <strong>Regional First Place</strong>, <em>RoboMaster University Championship</em> 🏆
+                <br>
+                Vision-based target recognition, camera ranging, and Kalman-filter tracking and prediction, integrated with ROS-based localization, navigation, and obstacle avoidance for autonomous robots.
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/mipnerf_ipe.png" alt="mip-NeRF" width="160">
+                <img src="images/mipnerf_ipe.png" alt="The Automated Guided Vehicle Based on Jetson Nano for Delivery" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="mipnerf/">
-                  <span class="papertitle">The Automated Guided Vehicle Based On Jetson Nano For Delivery</span>
+                <a href="undergrad/agv-delivery/">
+                  <span class="papertitle">The Automated Guided Vehicle Based on Jetson Nano for Delivery</span>
                 </a>
                 <br>
-                Anti-aliased volume rendering for NeRF.
+                <em>Algorithm Developer, Intelligent Car Team</em>, [2022 Spring &ndash; 2022 Summer]
                 <br>
-                <a href="mipnerf/">project page</a>
+                <strong>National Third Prize</strong>, <em>National University Students Intelligent Car Race</em> 🏆
+                <br>
+                A delivery AGV on STM32 and Jetson Nano with lidar&ndash;camera SLAM, lane and traffic-light detection, autonomous navigation, and a ROS/Qt visualization interface.
+                <br>
+                <a href="TODO">report</a>
+                /
+                <a href="TODO">code</a>
               </td>
             </tr>
           </tbody></table>
 
           
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Education</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:10px 20px;width:70%;vertical-align:top">
+                <span class="papertitle">University of Pennsylvania</span>
+                <br>
+                M.S.E. in Robotics
+                <br>
+                Advisors: <a href="https://nbfigueroa.github.io/">Prof. Nadia Figueroa</a>, <a href="https://nikolaimatni.github.io/">Prof. Nikolai Matni</a>
+              </td>
+              <td style="padding:10px 20px;width:30%;vertical-align:top;text-align:right">
+                2025.8 &ndash; 2027.5 (Expected)
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:10px 20px;width:70%;vertical-align:top">
+                <span class="papertitle">Harbin Institute of Technology</span>
+                <br>
+                B.S. in Information and Computing Science
+                <br>
+                B.Eng. in Cyberspace Security
+              </td>
+              <td style="padding:10px 20px;width:30%;vertical-align:top;text-align:right">
+                2021.8 &ndash; 2025.6
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:10px 20px;width:70%;vertical-align:top">
+                <span class="papertitle">University of California, San Diego</span>
+                <br>
+                Visiting Student
+                <br>
+                Courses: Planning &amp; Learning in Robotics, Linear Control System Theory, Partial Differential Equations
+              </td>
+              <td style="padding:10px 20px;width:30%;vertical-align:top;text-align:right">
+                2025.3 &ndash; 2025.6
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:10px 20px;width:70%;vertical-align:top">
+                <span class="papertitle">University of California, Berkeley</span>
+                <br>
+                Visiting Student
+                <br>
+                Courses: Introduction to AI, Applied Machine Learning, Stochastic Process
+              </td>
+              <td style="padding:10px 20px;width:30%;vertical-align:top;text-align:right">
+                2024.1 &ndash; 2024.6
+              </td>
+            </tr>
+          </tbody></table>
+
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
                 <h2>Miscellanea</h2>
+                <p>
+                  Outside the lab, I've been a devoted FC Bayern Munich fan since 2014. I love traveling, hiking, skiing, and music, and I'm currently picking up Spanish and German for fun.
+                </p>
               </td>
             </tr>
           </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
 
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-            
-            
-          </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:0px">
+              <td style="padding:0px;width:33%"></td>
+              <td style="padding:0px;width:34%">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  Last updated: Oct. 2026
+                </p>
+              </td>
+              <td style="padding:0px;width:33%">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  <a href="https://github.com/jonbarron/jonbarron_website">source code</a>
                 </p>
               </td>
             </tr>

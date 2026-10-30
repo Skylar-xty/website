@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Target Tracking and Aiming System in Complex Motion Environment</title>
+
+    <meta name="author" content="Tianyi Xia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:20px">
+          <p><a href="../../">&larr; Back to home</a></p>
+
+          <h2>Target Tracking and Aiming System in Complex Motion Environment</h2>
+          <p>
+            <strong>Tianyi Xia</strong>
+            <br>
+            <strong>National Second Prize</strong> and <strong>Regional First Place</strong>, <em>RoboMaster University Championship</em>
+          </p>
+
+          <p>
+            I was an algorithm developer on my university's RoboMaster team, competing in the <a href="https://robomaster.com/en-US">RoboMaster University Championship</a> organized by DJI and advancing from the provincial and regional rounds to the national finals. During this time, I:
+          </p>
+
+          <ul>
+            <li>Built the armor recognition pipeline with OpenCV, combining traditional vision with learned object detection, and developed robust monocular and binocular ranging that localizes the target through Perspective-n-Point, bundle-adjustment optimization, and transformations between coordinate frames.</li>
+            <li>Designed target tracking and motion prediction with several Kalman filter variants (KF, EKF, UKF) and their fusion, with strategies tailored to different motion scenarios.</li>
+            <li>Developed localization, navigation, and obstacle avoidance for autonomous robots on ROS with multi-sensor fusion, supporting autonomous movement and decision-making in complex environments.</li>
+            <li>Maintained the codebase, parameter loading and tuning, auto-start scripts, and communication with the control board, and ran algorithm tests to keep the system stable on the field.</li>
+          </ul>
+
+          <h3>Tracking UI</h3>
+          <p>
+            The video below shows our robot's on-board UI while the target armor moves in the X and Y directions at different speeds. The green annotations mean:
+          </p>
+          <ul>
+            <li><code>tracking!</code>: the robot is locked on and tracking the same enemy robot.</li>
+            <li><code>target_X</code>, <code>target_Y</code>, <code>target_Z</code>: the armor center in world coordinates after coordinate conversion.</li>
+            <li><code>final_yaw</code>, <code>final_pitch</code>: the solved yaw and pitch toward the target in world coordinates.</li>
+            <li><code>Armor Type</code>: 0 for small armor, 1 for large armor.</li>
+            <li><code>no gyro!</code>: the target is not spinning in place (&ldquo;gyro&rdquo; mode).</li>
+            <li><code>dir</code>: the direction the target is moving in the image, e.g. <code>right</code>.</li>
+            <li><code>bullet_speed</code>: the robot's set projectile speed.</li>
+            <li><code>msg_yaw</code>: the yaw command sent to the control board.</li>
+            <li>Points on the armor: green is the current center, red is the predicted center at a future time step, and the circle is the predicted landing point of the projectile.</li>
+            <li>A white cross on an armor marks a discarded target.</li>
+          </ul>
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:16px auto 0;">
+            <source src="test.mp4" type="video/mp4">
+          </video>
+          <p style="text-align:center;color:#666;font-size:13px;">Armor recognition, coordinate computation, and tracking UI.</p>
+
+          <h3>Shooting Tests</h3>
+          <p>
+            Our robot shooting the outpost, a scoring structure in the competition, with a 100% hit rate (left), and an auto-aiming test against a moving robot in the lab (right).
+          </p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+            <video controls preload="metadata" playsinline style="height:420px;max-width:100%;">
+              <source src="demo1-1.mp4" type="video/mp4">
+            </video>
+            <video controls preload="metadata" playsinline style="height:420px;max-width:100%;">
+              <source src="demo2-1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <h3>National Finals</h3>
+          <p>
+            Livestream footage from one match of the national finals. Our team is on the red side; watch the one-on-one shootout between the two No.&nbsp;5 robots.
+          </p>
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:0 auto;">
+            <source src="real.mp4" type="video/mp4">
+          </video>
+
+          <h3>First-Person View</h3>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+            <video controls preload="metadata" playsinline style="flex:1 1 300px;min-width:0;max-width:100%;">
+              <source src="ui1-1.mp4" type="video/mp4">
+            </video>
+            <video controls preload="metadata" playsinline style="flex:1 1 300px;min-width:0;max-width:100%;">
+              <source src="ui2-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="text-align:center;color:#666;font-size:13px;">First-person UI showing target information and the auto-aiming solution.</p>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>

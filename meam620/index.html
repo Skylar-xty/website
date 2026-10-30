@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Autonomous Quadrotor Flight through Cluttered Mazes</title>
+
+    <meta name="author" content="Tianyi Xia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:20px">
+          <p><a href="../">&larr; Back to home</a></p>
+
+          <h2>Autonomous Quadrotor Flight through Cluttered Mazes</h2>
+          <p>
+            Sanghyub (Paul) Lee, Angelina Zhang, Parra Wang, <strong>Tianyi Xia</strong>
+          </p>
+
+          <ul>
+            <li>Deployed a full planning-and-control stack on a Crazyflie 2.0 quadrotor in a VICON motion-capture arena: A* search on an inflated 3D occupancy grid, greedy shortcutting into sparse waypoints, and minimum-jerk quintic splines continuous up to snap.</li>
+            <li>Implemented a geometric SE(3) tracking controller with a PD position loop and a nonlinear attitude loop, and retuned its gains on hardware to handle actuator dynamics, sensor noise, and model mismatch absent in simulation.</li>
+            <li>Flew all three mazes autonomously with 0.02&ndash;0.06 m lateral and about 0.12 m vertical tracking RMSE.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>

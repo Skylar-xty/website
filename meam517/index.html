@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Viability-Preserving Passive Torque Control for Mobile Base Manipulator</title>
+
+    <meta name="author" content="Tianyi Xia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:20px">
+          <p><a href="../">&larr; Back to home</a></p>
+
+          <h2>Viability-Preserving Passive Torque Control for Mobile Base Manipulator</h2>
+          <p>
+            Aditya Vats, <strong>Tianyi Xia</strong>, Sumukh Shrote
+          </p>
+
+          <ul>
+            <li>Extended Viability-Preserving Passive Torque Control (VPP-TC) from a fixed-base arm to a 9-DoF mobile manipulator (7-DoF arm on a 2-DoF omnidirectional base), keeping a passive DS-based torque controller inside precomputed viable sets for joint limits, self-collision, and external collision via an instantaneous QP.</li>
+            <li>Learned the self-collision viable set with a Transformer classifier (99.69% accuracy, 99.72% recall on 8M sampled states) and encoded external-collision viability with Bernstein-polynomial link SDFs, benchmarking against a CBF-QP baseline (CPIC) with identical constraints in PyBullet.</li>
+            <li>Ran at 110 Hz vs. 47 Hz for the Hessian-dependent CBF baseline, converging 3&times; faster (3 s vs. 9 s) with 6&ndash;11&times; lower RMS end-effector jerk while keeping tracking collision-free.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
