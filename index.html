@@ -22,10 +22,12 @@
                 <p class="name" style="text-align: center;">
                   Tianyi Xia
                 </p>
-                <p>I'm a master's student in Robotics at the <a href="https://www.grasp.upenn.edu/">GRASP Lab</a>, <a href="https://www.upenn.edu/">University of Pennsylvania</a>, advised by <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a> and <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>. I work on safe and stable robot learning: learning motion policies from demonstrations and giving them provable stability and safety guarantees with tools from control theory, such as Lyapunov functions, control barrier functions, and reachability analysis.
+                <p>I'm a master's student in Robotics at the <a href="https://www.grasp.upenn.edu/">GRASP Lab</a>, <a href="https://www.upenn.edu/">University of Pennsylvania</a>, advised by <a href="https://nbfigueroa.github.io/">Prof. Nadia Figueroa</a> and <a href="https://nikolaimatni.github.io/">Prof. Nikolai Matni</a>.
+                  <!-- I received my B.S. in Information and Computing Science and B.Eng. in Cyberspace Security from Harbin Institute of Technology, and was a visiting student at UC Berkeley and UC San Diego. -->
+                  I was a visiting student at UC Berkeley and UC San Diego. I have also worked on human&ndash;robot interaction at the <a href="https://pi.cs.tsinghua.edu.cn/">Pervasive HCI Group</a>, Tsinghua University.
                 </p>
                 <p>
-                  I received my B.S. in Information and Computing Science and B.Eng. in Cyberspace Security from <a href="http://en.hit.edu.cn/">Harbin Institute of Technology</a>, and was a visiting student at <a href="https://www.berkeley.edu/">UC Berkeley</a> and <a href="https://ucsd.edu/">UC San Diego</a>. I have also worked on human&ndash;robot interaction at the <a href="https://pi.cs.tsinghua.edu.cn/">Pervasive HCI Group</a>, Tsinghua University.
+                  My research focuses on safe, learning-based control for robots performing contact-rich tasks in human-centered environments.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:tianyxia@seas.upenn.edu">Email</a> &nbsp;/&nbsp;
@@ -37,7 +39,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/photo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+                <!-- <a href="images/photo1.jpg"> --><img style="width:100%;max-width:100%;aspect-ratio: 1 / 1;object-fit: cover;object-position: 60% 70%; border-radius: 50%;" alt="profile photo" src="images/photo1.jpg" class="hoverZoomLink"><!-- </a> -->
               </td>
             </tr>
           </tbody></table>
@@ -46,7 +48,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research focuses on developing safe, learning-based control for harmonious human&ndash;robot interaction.
+                  My research focuses on developing safe, learning-based control for harmonious human&ndash;robot interaction. I aim to combine the flexibility of learned policies with the guarantees of control theory, building stability and safety directly into how robots learn, so that their skills can be trusted as they adapt to new tasks and work alongside people.
                 </p>
               </td>
             </tr>
@@ -77,10 +79,10 @@
     
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/zipnerf.jpg" alt="A Reachability-based Safety Certificate for Dynamical System Motion Policies" width="160">
+        <img src="images/ds_safety_3d.png" alt="A Reachability-based Safety Certificate for Dynamical System Motion Policies" width="160">
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="TODO">
+        <a href="https://arxiv.org/abs/2609.38421">
           <span class="papertitle">A Reachability-based Safety Certificate for Dynamical System Motion Policies</span>
         </a>
         <br>
@@ -90,7 +92,7 @@
         <br>
         <strong>Spotlight</strong>, <em>IROS 2026 Workshop on Hybrid Architectures for Embodied Autonomy</em>
         <br>
-        <a href="TODO">paper</a>
+        <a href="https://arxiv.org/abs/2609.38421">paper</a>
         <p></p>
         <p>
           Developed a reachability-based safety certificate for DS motion policies that reduces the infinite-horizon problem to a finite-horizon rollout while provably recovering the maximal forward-invariant safe set. Its look-ahead safety filter avoids the spurious attractors and deadlocks of modulation and CBF methods, validated on five DS classes and a Franka manipulator.
@@ -100,21 +102,21 @@
 
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/zipnerf.jpg" alt="Execution-Level Correction for Surgical Robot Automation via Residual Policy Learning from Human Corrections" width="160">
+        <img src="images/surrest.png" alt="Execution-Level Correction for Surgical Robot Automation via Residual Policy Learning from Human Interventions" width="160">
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="TODO">
-          <span class="papertitle">Execution-Level Correction for Surgical Robot Automation via Residual Policy Learning from Human Corrections</span>
+        <a href="data/Final_Version.pdf">
+          <span class="papertitle">Execution-Level Correction for Surgical Robot Automation via Residual Policy Learning from Human Interventions</span>
         </a>
         <br>
         Kejian Shi, Qingbiao Li, Chunhei Lau, <strong>Tianyi Xia</strong>, Lei Song, Yonghao Long, Sethu Vijayakumar, Qi Dou
         <br>
         <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026 (to appear)
         <br>
-        <a href="TODO">paper</a>
+        <a href="data/Final_Version.pdf">paper</a>
         <p></p>
         <p>
-          [One- or two-sentence description]
+          SuRResT, a residual transformer that learns execution-level corrections from sparse human-in-the-loop interventions on top of a frozen imitation-learning policy, correcting drift at precision-critical stages such as grasping and handover. It improves task success by up to 59.3 points in simulation and reaches 97.8% on Needle Grasp and Place and 93.3% on Peg Transfer on the real dVRK.
         </p>
       </td>
     </tr>
@@ -255,7 +257,7 @@
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/zipnerf.jpg" alt="Planning, Control, and Learning for Robotics" width="160">
+                <img src="images/minigrid.gif" alt="Planning, Control, and Learning for Robotics" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="ece276b/">
@@ -293,7 +295,7 @@
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/mipnerf_ipe.png" alt="The Automated Guided Vehicle Based on Jetson Nano for Delivery" width="160">
+                <img src="images/agv_car.jpg" alt="The Automated Guided Vehicle Based on Jetson Nano for Delivery" width="160">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="undergrad/agv-delivery/">
@@ -302,13 +304,11 @@
                 <br>
                 <em>Algorithm Developer, Intelligent Car Team</em>, [2022 Spring &ndash; 2022 Summer]
                 <br>
-                <strong>National Third Prize</strong>, <em>National University Students Intelligent Car Race</em> 🏆
+                <strong>National Third Prize</strong> and <strong>North China Regional Second Prize</strong>, <em>National University Students Intelligent Car Race</em> 🏆
                 <br>
                 A delivery AGV on STM32 and Jetson Nano with lidar&ndash;camera SLAM, lane and traffic-light detection, autonomous navigation, and a ROS/Qt visualization interface.
                 <br>
-                <a href="TODO">report</a>
-                /
-                <a href="TODO">code</a>
+                <a href="undergrad/agv-delivery/final.MP4">video</a>
               </td>
             </tr>
           </tbody></table>
@@ -337,6 +337,7 @@
               </td>
             </tr>
 
+            <!--
             <tr>
               <td style="padding:10px 20px;width:70%;vertical-align:top">
                 <span class="papertitle">Harbin Institute of Technology</span>
@@ -349,6 +350,8 @@
                 2021.8 &ndash; 2025.6
               </td>
             </tr>
+            -->
+
 
             <tr>
               <td style="padding:10px 20px;width:70%;vertical-align:top">
@@ -389,6 +392,9 @@
             </tr>
           </tbody></table>
 
+          <div style="width:300px;max-width:100%;margin:20px auto 0;">
+            <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=TODO"></script>
+          </div>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>

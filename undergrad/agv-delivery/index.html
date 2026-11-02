@@ -22,14 +22,110 @@
           <p>
             <strong>Tianyi Xia</strong>
             <br>
-            <strong>National Third Prize</strong>, <em>National University Students Intelligent Car Race</em>
+            <strong>National Third Prize</strong> and <strong>North China Regional Second Prize</strong>, <em>National University Students Intelligent Car Race</em>
+          </p>
+
+          <p>
+            Our team built an autonomous delivery vehicle for the Aerospace Intelligent Logistics track of the 17th National University Students Intelligent Car Race (2022). We ranked 30th among hundreds of teams in the online qualifier, which earned us the competition vehicle (worth about $3,000) and a spot in the regional round. We then won Second Prize in the North China regional round and advanced to the national finals, where we won Third Prize. The project was also showcased as an outstanding work in university innovation competitions. During this project, I:
           </p>
 
           <ul>
-            <li>Developed and implemented an automated guided vehicle with the functions of SLAM, navigation, traffic light recognition, lane detection, and tracking on STM32 and Jetson Nano.</li>
-            <li>Applied lidar and camera as sensors with AMCL and path planning algorithms such as A*, Dijkstra, and genetic algorithms to perceive the surroundings to automatically avoid obstacles and move to the target point.</li>
-            <li>Developed a Navigation Visualization Interface based on ROS and Qt, including functions such as target sending, terminal input, map, and trajectory visualization.</li>
+            <li>Developed an automated guided vehicle on STM32 and Jetson Nano with SLAM, navigation, traffic-light recognition, lane detection, and tracking built on OpenCV.</li>
+            <li>Used lidar and camera with AMCL and path planners such as A*, Dijkstra, and genetic algorithms to perceive the surroundings, avoid static and dynamic obstacles, and reach target points autonomously, and tested the ORB-SLAM family of algorithms.</li>
+            <li>Built a navigation visualization interface with ROS and Qt for sending goals, terminal input, and map and trajectory visualization.</li>
           </ul>
+
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:16px 0;">
+            <img src="car1.png" alt="Vehicle chassis with lidar" style="width:300px;max-width:100%;">
+            <img src="car2.png" alt="Assembled delivery vehicle" style="width:300px;max-width:100%;">
+          </div>
+
+          <p>
+            The final technical reports for the regional and national rounds are not public. Please contact me if you are interested in more details.
+          </p>
+
+          <h3>Key Technologies</h3>
+
+          <h4>Ackermann Motion Model</h4>
+          <img src="ACSP_10.png" alt="Ackermann motion model" style="width:100%;">
+
+          <h4>Central Task Scheduling System: Communication</h4>
+          <img src="ACSP_11.png" alt="Central task scheduling system and communication" style="width:100%;">
+
+          <h4>Computer Vision: Traffic Light and ArUco Code Recognition</h4>
+          <img src="ACSP_12.png" alt="Traffic light and ArUco code recognition" style="width:100%;">
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:16px auto 0;">
+            <source src="redgreen.mp4" type="video/mp4">
+          </video>
+
+          <h4>Computer Vision: Lane Detection</h4>
+          <img src="ACSP_14.png" alt="Lane detection" style="width:100%;">
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:16px auto 0;">
+            <source src="s.mp4" type="video/mp4">
+          </video>
+
+          <h4>Localization and Navigation</h4>
+          <img src="ACSP_16.png" alt="Localization and navigation" style="width:100%;">
+
+          <h4>Real-World Demonstration</h4>
+          <img src="ACSP_17.png" alt="Real-world demonstration" style="width:100%;">
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:16px auto 0;">
+            <source src="final.MP4" type="video/mp4">
+          </video>
+
+          <h3>Online Qualifier</h3>
+          <p>
+            The online qualifier consisted of five tasks. The reports are in Chinese.
+          </p>
+
+          <h4>Task 1: Ackermann Steering Control</h4>
+          <p>Differential drive control under the Ackermann steering model on an STM32, commanded over serial and Bluetooth.</p>
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:0 auto;">
+            <source src="task1.mp4" type="video/mp4">
+          </video>
+          <p><a href="task1-report.pdf">report</a></p>
+
+          <h4>Task 2: Client&ndash;Server Communication</h4>
+          <p>A Qt client on Windows that exchanges messages, camera images, and commands with a ROS server on the vehicle.</p>
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:0 auto;">
+            <source src="task2.mp4" type="video/mp4">
+          </video>
+          <p><a href="task2-report.pdf">report</a></p>
+
+          <h4>Task 3: Lane Detection</h4>
+          <p>Lane-line detection in OpenCV with a perspective transform, HSV thresholding, and contour filtering.</p>
+          <video controls preload="metadata" playsinline style="display:block;width:100%;max-width:640px;margin:0 auto;">
+            <source src="task3.mp4" type="video/mp4">
+          </video>
+          <p><a href="task3-report.pdf">report</a></p>
+
+          <h4>Task 4: Path Planning</h4>
+          <p>A* with optimizations such as bidirectional search, Theta*, and simulated annealing, extended with sampling-based planners including RRT, RRT*, and informed RRT*.</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+            <video controls preload="metadata" playsinline style="flex:1 1 300px;min-width:0;max-width:100%;">
+              <source src="task4-1.mp4" type="video/mp4">
+            </video>
+            <video controls preload="metadata" playsinline style="flex:1 1 300px;min-width:0;max-width:100%;">
+              <source src="task4-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p><a href="task4-report.pdf">report</a></p>
+
+          <h4>Task 5: LiDAR SLAM</h4>
+          <p>Mapping with gmapping, Hector, Karto, and Cartographer, a comparison of their results, and parameter tuning of Cartographer.</p>
+          <p><a href="task5-report.pdf">report</a></p>
+
+          <h3>Awards</h3>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+            <div style="width:300px;max-width:100%;text-align:center;">
+              <img src="certificate_of_merit-regional.jpg" alt="North China Regional Second Prize certificate" style="width:100%;">
+              <p style="color:#666;font-size:13px;">North China Regional Second Prize</p>
+            </div>
+            <div style="width:300px;max-width:100%;text-align:center;">
+              <img src="certificate_of_merit-national.png" alt="National Third Prize certificate" style="width:100%;">
+              <p style="color:#666;font-size:13px;">National Third Prize</p>
+            </div>
+          </div>
         </td>
       </tr>
     </tbody></table>
