@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Postcrossing</title>
+
+    <meta name="author" content="Tianyi Xia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+    <script defer src="world.js"></script>
+    <script defer src="received.js"></script>
+    <script defer src="map.js"></script>
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:20px">
+          <p><a href="../">&larr; Back to home</a></p>
+
+          <h2>Postcrossing</h2>
+          <p>
+            I love <a href="https://www.postcrossing.com/">Postcrossing</a>, exchanging postcards with strangers around the world. Here is where the postcards in my mailbox have come from so far:
+          </p>
+          <div id="postcrossing-map" class="pc-map"></div>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>

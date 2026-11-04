@@ -133,3 +133,75 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Postcrossing map */
+.pc-map {
+  position: relative;
+  margin-top: 12px;
+}
+
+.pc-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pc-land {
+  fill: #e9e9e9;
+  stroke: #fff;
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.pc-received,
+.pc-dot {
+  cursor: pointer;
+}
+
+.pc-dot {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+.pc-received:hover,
+.pc-dot:hover {
+  stroke: #0b4f99;
+  stroke-width: 1;
+}
+
+.pc-tip {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 10px));
+  padding: 4px 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.pc-caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px 16px;
+  margin: 8px 0 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.pc-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pc-legend i {
+  display: inline-block;
+  width: 64px;
+  height: 8px;
+  border-radius: 2px;
+}
