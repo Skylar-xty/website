@@ -390,8 +390,16 @@
           </tbody></table>
 
           <div style="width:300px;max-width:100%;margin:20px auto 0;">
-            <!-- <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=tWOWt7tzVrjdEXmfp0KqP-zjA0oWlf_GiFQpAH9ogns&cl=ffffff&w=a"></script> -->
-            <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=tWOWt7tzVrjdEXmfp0KqP-zjA0oWlf_GiFQpAH9ogns"></script>
+            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=tWOWt7tzVrjdEXmfp0KqP-zjA0oWlf_GiFQpAH9ogns&cl=ffffff&w=a"></script>
+            <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=tWOWt7tzVrjdEXmfp0KqP-zjA0oWlf_GiFQpAH9ogns"></script> -->
+            <script>
+              // Block clicks to the public MapMyVisitors stats page; pointer-events:none would also kill the dot tooltips.
+              ['click', 'auxclick'].forEach(function (type) {
+                document.addEventListener(type, function (e) {
+                  if (e.target.closest && e.target.closest('#mmvst_a')) e.preventDefault();
+                }, true);
+              });
+            </script>
           </div>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>

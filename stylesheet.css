@@ -205,3 +205,6 @@ span.highlight {
   height: 8px;
   border-radius: 2px;
 }
+#mmvst_a {
+  cursor: default;
+}
